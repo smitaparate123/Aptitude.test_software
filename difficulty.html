@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Difficulty</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h1>Select Difficulty</h1>
+
+        <div id="studentWelcome"></div>
+
+        <p class="subtitle">
+            Choose your aptitude test level
+        </p>
+
+        <div class="difficulty-container">
+
+            <button class="difficulty easy"
+                    onclick="startTest('easy')">
+                <h2>Easy</h2>
+                <p>20 Questions</p>
+                <p>20 Marks</p>
+            </button>
+
+            <button class="difficulty medium"
+                    onclick="startTest('medium')">
+                <h2>Medium</h2>
+                <p>15 Questions</p>
+                <p>20 Marks</p>
+            </button>
+
+            <button class="difficulty hard"
+                    onclick="startTest('hard')">
+                <h2>Hard</h2>
+                <p>10 Questions</p>
+                <p>20 Marks</p>
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

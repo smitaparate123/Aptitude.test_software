@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aptitude Test</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="quiz-container">
+
+    <div class="quiz-header">
+
+        <div>
+            <h2>Aptitude Test</h2>
+            <p id="difficultyText"></p>
+        </div>
+
+        <div class="timer">
+            ⏱ <span id="timer">15:00</span>
+        </div>
+
+    </div>
+
+    <div class="progress">
+        Question <span id="questionNumber">1</span>
+        of <span id="totalQuestions"></span>
+    </div>
+
+    <div class="question-card">
+
+        <h2 id="question"></h2>
+
+        <div id="options"></div>
+
+    </div>
+
+    <div class="navigation">
+
+        <button id="previousBtn"
+                class="secondary-btn"
+                onclick="previousQuestion()">
+            Previous
+        </button>
+
+        <button id="nextBtn"
+                class="btn"
+                onclick="nextQuestion()">
+            Next
+        </button>
+
+        <button id="submitBtn"
+                class="submit-btn"
+                onclick="submitTest()">
+            Submit Test
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
